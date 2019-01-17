@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true,live_feed=true" extends="sys_metadata" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Desc" max_length="40" name="desc" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" label="Value" max_length="40" name="value" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
+                <element inactive_on_update="false" label="choice2" value="choice2"/>
+            </choice>
+        </element>
+    </element>
+</database>
